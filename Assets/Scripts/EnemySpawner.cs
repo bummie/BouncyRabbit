@@ -6,10 +6,6 @@ public class EnemySpawner : MonoBehaviour
     public GameObject EnemyContainer;
     public float spawnRateBird = 2f, spawnRateCar = 3f;
     private float timerBird = 0f, timerCar = 0f;
-	void Start ()
-    {
-        
-	}
 	
 	void Update ()
     {
@@ -18,13 +14,13 @@ public class EnemySpawner : MonoBehaviour
         timerCar += Time.deltaTime;
         if (timerBird >= spawnRateBird)
         {
-            spawnBird(Random.Range(2.5f, 9f), Random.Range(4f, 12f));
+            spawnBird(Random.Range(2.5f, 9f), Random.Range(7f, 14f));
             spawnRateBird = (Random.Range(.65f, 1.5f));
             timerBird = 0f;
         }
         if (timerCar >= spawnRateCar)
         {
-            spawnCar(Random.Range(5f, 12f));
+            spawnCar(Random.Range(7f, 14f));
             spawnRateCar = (Random.Range(2f, 3f));
             timerCar = 0f;
         }

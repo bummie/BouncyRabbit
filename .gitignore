@@ -1,1 +1,5 @@
 *.apk
+*.backup
+Temp/UnityLockfile
+Temp/UnityTempFile-0806f5e086852a346b18b259ae2df948
+Temp/UnityTempFile-6c8099ace640be54796b7bbc3999b2ed
