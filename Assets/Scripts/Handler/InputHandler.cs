@@ -32,6 +32,7 @@ public class InputHandler : MonoBehaviour {
             player.GetComponent<Animator>().SetBool("isFalling", true);
             float newYVel = Mathf.SmoothDamp(player.GetComponent<Rigidbody2D>().velocity.y, -maxVelocity, ref curYVel, dampValue);
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, newYVel);
+          
         }
 
         // Når slipper space
